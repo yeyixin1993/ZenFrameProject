@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Welcome</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{{url_for('static', filename='images/icons/favicon.ico')}}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/animate/animate.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/css-hamburgers/hamburgers.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/select2/select2.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/util.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}">
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<div class="bg-contact3" style="background-image: url('{{url_for('static', filename='images/bg-01.jpg')}}');">
+		<div class="container-contact3">
+			<div class="wrap-contact3">
+				<form class="contact3-form validate-form" action="/create_events" method="post">
+					<span class="contact3-form-title">
+						库存对账系统
+					</span>
+
+					<div class="wrap-contact3-form-radio">
+
+						<div class="contact3-form-radio">
+							<input class="input-radio3" id="radio2" type="radio" name="choice" value="get-quote" checked="checked">
+							<label class="label-radio3" for="radio2">
+								Welcome!
+							</label>
+						</div>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Name is required">
+						<a class="input3" type="text" target="_blank" href="new_attendee">添加购入记录</a>
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input">
+						<a class="input3" type="text" target="_blank" href="new_meeting">添加领用记录</a>
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input">
+						<a class="input3" type="text" href="curr_meeting">查看结余</a>
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input">
+						<a class="input3" type="text" href="get_input_info">查看最近输入记录</a>
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input">
+						<a class="input3" type="text" href="new_record">添加新模具</a>
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input">
+						<a class="input3" type="text" href="delete_record">删除模具</a>
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input">
+						<a class="input3" type="text" href="tiao_calc">条子数量计算</a>
+						<span class="focus-input3"></span>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+-->
+
+</body>
+</html>
